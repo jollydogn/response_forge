@@ -26,7 +26,7 @@ builder.Services.AddSwaggerGen(options =>
                       "All responses are automatically wrapped in a standardized envelope format.",
         Contact = new Microsoft.OpenApi.Models.OpenApiContact
         {
-            Name = "Piton Projects",
+            Name = "ResponseForge",
             Url = new Uri("https://github.com/jollydogn/response_forge")
         },
         License = new Microsoft.OpenApi.Models.OpenApiLicense
