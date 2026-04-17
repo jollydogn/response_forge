@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>ResponseForge</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Piton Projects</Authors>
+    <Description>A lightweight, generic API response wrapper middleware for ASP.NET Core. Automatically wraps all API responses in a consistent envelope format with standardized error handling, custom message attributes, and environment-aware stack trace inclusion.</Description>
+    <PackageTags>aspnetcore;middleware;api;response;wrapper;envelope;standardization</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jollydogn/response_forge</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jollydogn/response_forge</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
