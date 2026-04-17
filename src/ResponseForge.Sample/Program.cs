@@ -1,9 +1,13 @@
 using ResponseForge.Extensions;
+using ResponseForge.Sample.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add controllers
 builder.Services.AddControllers();
+
+// Register Mock Service
+builder.Services.AddSingleton<IMockDataAppService, MockDataAppService>();
 
 // Add ResponseForge with custom configuration
 builder.Services.AddResponseForge(options =>
